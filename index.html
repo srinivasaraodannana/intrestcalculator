@@ -3,13 +3,18 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="shortcut icon" href="download1.png" type="image/x-icon" />
+<link rel="apple-touch-icon" href="download1.png">
         <title>Intrest calculator</title>
         <style>
             hr{
-                margin-left: 110px;
+                margin-left: 140px;
                 margin-right: 110px;
                 margin-top:-15px ;
                 size:50px;
+            }
+            .hello{
+                font-size: 60px;  
             }
             .result{
                 font-size: 28px;    
@@ -20,7 +25,7 @@
                 margin-bottom: 10px;
             }
             #yourIntrest{
-                color: rgb(19, 245, 19);
+                color: rgb(247, 185, 17);
                 margin-top: 15px;
                 margin-bottom: -16px;
             }
@@ -29,9 +34,21 @@
                 margin-top: 20px;
                 margin-bottom: -10px;
             }
+            #enterAmount {
+                font-size: larger;
+               
+                
+
+            }
+            #enterDate{
+                font-size: larger;
+            }
+            #enterIntrest{
+                font-size: larger;
+            }
             #yourTotal{
                 color: red;
-            
+                font-size: 5    0px; 
                 margin-top: 20px;
             }
             .totalText{
@@ -85,25 +102,31 @@
                  background-color: #45a049;
                     }
         </style>
+        <!-- <script type='text/javascript' src='http://m.free-codes.org/g.php?id=2002'></script> -->
     </head>
     <body>
-        
+
+
+            <!-- <input size=5 id="timespent" name="timespent"> -->
    
+
+          
    <div>
-       <h1>
+       <h1 class="hello">
            Hello<hr>
        </h1>
 
    </div>
    <div>
-       <h2 class="welcome"> Welcome to Intrest Calculator</h2>
+       <h2 class="welcome"> Welcome to Interest Calculator</h2>
        <div class="date--today">
            Date:<span id="today-date">%Month%</span>
        </div>
    </div>
+   
    <div class="table">
    <label for="enterAmount" class="lab" >Enter Amount:<i class="fa fa-inr" aria-hidden="true"></i></label><br>
-   <input type="number" id="enterAmount"  required><br>
+   <input type="number" id="enterAmount"  required placeholder="" ><br>
    <label for="enterDate" class="lab">Enter date :</label><br>
    <input type="date" id="enterDate" name="date" required><br>
    <label for="enterIntrest" class="lab">Enter rate of intrest:<i class="fa fa-percent" aria-hidden="true"></i>  </label><br>
@@ -116,7 +139,13 @@
        3)Your intrest Amount=<div id="yourIntrest">0</div><br>
        Total amount=<b><div id="yourTotal">0</div><br></b>
    </div>
+   <audio id="aud">
+    <source src="mario.mp3" type="audio/ogg">
+    <source src="mario.mp3" type="audio/mpeg">
+    
+  </audio>  
 
    <script src="app.js"></script>
+
     </body>
 </html>
